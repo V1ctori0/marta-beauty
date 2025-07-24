@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Marta Beauty - Especialista em cílios e sobrancelhas. Realce sua beleza com delicadeza, precisão e cuidado.">
+    <meta name="keywords" content="cílios, sobrancelhas, beleza, estética, Marta Beauty">
+    <title>Marta Beauty - Sua beleza em boas mãos</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <div class="nav__logo-icon">MB</div>
+                Marta Beauty
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Início</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#agendamento" class="nav__link">Agendamento</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contato" class="nav__link">Contato</a>
+                    </li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Sua beleza em boas mãos com
+                            <span class="home__title-accent">Marta Beauty</span>
+                            <i class="fas fa-sparkles home__sparkle"></i>
+                        </h1>
+                        <p class="home__description">
+                            Especialista em cílios e sobrancelhas. Realce sua beleza com delicadeza,
+                            precisão e cuidado. Atendimentos personalizados, com foco em autoestima e bem-estar.
+                        </p>
+                        <a href="#agendamento" class="button home__button">
+                            <i class="fas fa-sparkles"></i>
+                            Agendar agora
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__images">
+                    <div class="home__img-main">
+                        <img src="assets/images/hero-image.jpg" alt="Marta Beauty - Especialista em beleza"
+                            class="home__img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery Carousel -->
+            <div class="gallery section">
+                <div class="container">
+                    <h2 class="section__title">Nossos Trabalhos</h2>
+                    <div class="gallery__container">
+                        <div class="gallery__wrapper">
+                            <div class="gallery__slide active">
+                                <img src="assets/images/work1.jpg" alt="Trabalho 1" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <p class="gallery__text">Extensão de Cílios</p>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <img src="assets/images/work2.jpg" alt="Trabalho 2" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <p class="gallery__text">Design de Sobrancelhas</p>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <img src="assets/images/work3.jpg" alt="Trabalho 3" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <p class="gallery__text">Antes e Depois</p>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <img src="assets/images/work4.jpg" alt="Trabalho 4" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <p class="gallery__text"></p>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <img src="assets/images/work5.jpg" alt="Trabalho 5" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <p class="gallery__text"></p>
+                                </div>
+                            </div>
+                            <div class="gallery__slide">
+                                <img src="assets/images/work6.jpg" alt="Trabalho 6" class="gallery__img">
+                                <div class="gallery__overlay">
+                                    <p class="gallery__text"></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="gallery__btn gallery__btn--prev" id="gallery-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="gallery__btn gallery__btn--next" id="gallery-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <div class="gallery__indicators">
+                            <span class="gallery__dot active" data-slide="0"></span>
+                            <span class="gallery__dot" data-slide="1"></span>
+                            <span class="gallery__dot" data-slide="2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Depoimentos Section -->
+        <section class="depoimentos section" id="depoimentos">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        O que nossas clientes dizem
+                        <i class="fas fa-heart"></i>
+                    </h2>
+                    <p class="section__description">
+                        Depoimentos reais de clientes satisfeitas com nossos serviços
+                    </p>
+                </div>
+
+                <div class="depoimentos__container">
+                    <div class="depoimentos__grid">
+                        <div class="depoimento__card" style="display: block;">
+                            <div class="depoimento__content">
+                                <div class="depoimento__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="depoimento__text">
+                                    "Simplesmente perfeito! A Marta é muito cuidadosa e o resultado ficou exatamente
+                                    como eu queria. Meus cílios ficaram lindos e naturais!"
+                                </p>
+                                <div class="depoimento__author">
+                                    <div class="depoimento__avatar">
+                                        <img src="assets/images/cliente1.jpg" alt="Cliente 1">
+                                    </div>
+                                    <div class="depoimento__info">
+                                        <h4 class="depoimento__name">Ana Carolina</h4>
+                                        <span class="depoimento__service">Extensão de Cílios</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="depoimento__card" style="display: none;">
+                            <div class="depoimento__content">
+                                <div class="depoimento__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="depoimento__text">
+                                    "Profissional incrível! Minhas sobrancelhas nunca ficaram tão perfeitas. Super
+                                    recomendo o trabalho da Marta!"
+                                </p>
+                                <div class="depoimento__author">
+                                    <div class="depoimento__avatar">
+                                        <img src="assets/images/cliente2.jpg" alt="Cliente 2">
+                                    </div>
+                                    <div class="depoimento__info">
+                                        <h4 class="depoimento__name">Juliana Santos</h4>
+                                        <span class="depoimento__service">Design de Sobrancelhas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="depoimento__card" style="display: none;">
+                            <div class="depoimento__content">
+                                <div class="depoimento__stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <p class="depoimento__text">
+                                    "Atendimento excepcional! Local limpo, organizado e a Marta é super atenciosa. Já
+                                    sou cliente fiel!"
+                                </p>
+                                <div class="depoimento__author">
+                                    <div class="depoimento__avatar">
+                                        <img src="assets/images/cliente3.jpg" alt="Cliente 3">
+                                    </div>
+                                    <div class="depoimento__info">
+                                        <h4 class="depoimento__name">Fernanda Lima</h4>
+                                        <span class="depoimento__service">Cílios + Sobrancelhas</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agendamento Section -->
+        <section class="agendamento section" id="agendamento">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Agende seu horário em poucos passos</h2>
+                    <p class="section__description">
+                        Escolha o que deseja fazer e preencha os dados para agendar com facilidade. Menos de 5 minutos!
+                    </p>
+                </div>
+
+                <div class="agendamento__container grid">
+                    <!-- Formulário de Agendamento -->
+                    <div class="agendamento__form-container">
+                        <form class="agendamento__form" id="agendamento-form">
+                            <div class="form__group">
+                                <label for="nome" class="form__label">Nome completo</label>
+                                <input type="text" id="nome" name="nome" class="form__input" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="telefone" class="form__label">Telefone com WhatsApp</label>
+                                <input type="tel" id="telefone" name="telefone" class="form__input" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="servico" class="form__label">O que deseja fazer?</label>
+                                <select id="servico" name="servico" class="form__select" required>
+                                    <option value="">Selecione um serviço</option>
+                                    <option value="sobrancelha">Sobrancelha</option>
+                                    <option value="cilios">Cílios</option>
+                                    <option value="sobrancelha-cilios">Sobrancelha + Cílios</option>
+                                    <option value="manutencao-cilios">Manutenção de cílios</option>
+                                    <option value="correcao-sobrancelha">Correção de sobrancelha</option>
+                                    <option value="manutencao-novo">Manutenção + novo procedimento</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="data" class="form__label">Data preferida</label>
+                                <input type="date" id="data" name="data" class="form__input" required>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="horario" class="form__label">Horário preferido</label>
+                                <select id="horario" name="horario" class="form__select" required>
+                                    <option value="">Selecione um horário</option>
+                                    <option value="08:00">08:00</option>
+                                    <option value="10:00">10:00</option>
+                                    <option value="14:00">14:00</option>
+                                    <option value="16:00">16:00</option>
+                                    <option value="17:00">18:00</option>
+                                </select>
+                            </div>
+
+                            <div class="form__group">
+                                <label for="observacoes" class="form__label">Observações (opcional)</label>
+                                <textarea id="observacoes" name="observacoes" class="form__textarea"
+                                    placeholder="Ex: Vou em um casamento, Quero alongar mais dessa vez, etc."></textarea>
+                            </div>
+
+                            <button type="submit" class="button form__button">
+                                <i class="fas fa-check"></i>
+                                Confirmar Agendamento
+                            </button>
+
+                            <div class="form__group">
+                                <p style="font-size: 0.9rem; color: #444; line-height: 1.6; margin-top: 2rem;">
+                                    <strong>Obs:</strong> Para garantir seu horário e evitar faltas, pedimos um sinal
+                                    antecipado:<br>
+                                    Cílios: R$40<br>
+                                    Sobrancelha: R$15<br>
+                                    Esse valor é abatido do total no dia do atendimento.<br>
+                                    Cancelamentos com menos de 24h de antecedência não serão reembolsados.<br><br>
+                                    O agendamento pode ser feito normalmente com valores padrão. Os planos são para quem
+                                    deseja comodidade mensal.<br>
+                                    <strong>Caso o horário escolhido não esteja disponível, a Marta entrará em contato
+                                        para sugerir outro.</strong>
+                                </p>
+                            </div>
+
+                        </form>
+
+                        <div class="form__success" id="form-success">
+                            <div class="success__content">
+                                <i class="fas fa-check-circle success__icon"></i>
+                                <h3 class="success__title">Agendamento enviado com sucesso!</h3>
+                                <p class="success__text">Marta entrará em contato para confirmar seu horário.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Planos Mensais -->
+                    <div class="planos__container">
+                        <h3 class="planos__title">Planos Mensais</h3>
+                        <p class="planos__description">Cuide da sua beleza todo mês com um plano personalizado.</p>
+
+                        <div class="planos__grid">
+                            <div class="plano__card">
+                                <div class="plano__header">
+                                    <h4 class="plano__name">Básico</h4>
+                                    <div class="plano__price">
+                                        <span class="plano__currency">R$</span>
+                                        <span class="plano__amount">120,00</span>
+                                    </div>
+                                </div>
+                                <div class="plano__content">
+                                    <p class="plano__description">1 sessão por mês de sobrancelha ou cílios</p>
+                                </div>
+                                <button class="button plano__button">Quero este plano</button>
+                            </div>
+
+                            <div class="plano__card plano__card--featured">
+                                <div class="plano__badge">Mais Popular</div>
+                                <div class="plano__header">
+                                    <h4 class="plano__name">Standard</h4>
+                                    <div class="plano__price">
+                                        <span class="plano__currency">R$</span>
+                                        <span class="plano__amount">180,00</span>
+                                    </div>
+                                </div>
+                                <div class="plano__content">
+                                    <p class="plano__description">1 manutenção + 1 sessão completa por mês</p>
+                                </div>
+                                <button class="button plano__button">Quero este plano</button>
+                            </div>
+
+                            <div class="plano__card">
+                                <div class="plano__header">
+                                    <h4 class="plano__name">Premium</h4>
+                                    <div class="plano__price">
+                                        <span class="plano__currency">R$</span>
+                                        <span class="plano__amount">240,00</span>
+                                    </div>
+                                </div>
+                                <div class="plano__content">
+                                    <p class="plano__description">Até 3 atendimentos por mês, prioridade na agenda</p>
+                                </div>
+                                <button class="button plano__button">Quero este plano</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="faqs section" id="faqs">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        Perguntas Frequentes
+                        <i class="fas fa-question-circle"></i>
+                    </h2>
+                    <p class="section__description">
+                        Tire suas dúvidas sobre nossos procedimentos
+                    </p>
+                </div>
+
+                <div class="faqs__container">
+                    <div class="faqs__content">
+                        <div class="faq__item">
+                            <div class="faq__header" onclick="toggleFAQ(this)">
+                                <h3 class="faq__question">Quanto tempo dura o alongamento de cílios?</h3>
+                                <i class="fas fa-chevron-down faq__icon"></i>
+                            </div>
+                            <div class="faq__content">
+                                <p class="faq__answer">
+                                    O alongamento de cílios dura em média de 3 a 4 semanas, dependendo do ciclo natural
+                                    dos seus cílios e dos cuidados pós-procedimento. Recomendamos manutenção a cada 2-3
+                                    semanas para manter o resultado perfeito.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__header" onclick="toggleFAQ(this)">
+                                <h3 class="faq__question">Posso molhar os cílios depois do procedimento?</h3>
+                                <i class="fas fa-chevron-down faq__icon"></i>
+                            </div>
+                            <div class="faq__content">
+                                <p class="faq__answer">
+                                    Nas primeiras 24 horas após o procedimento, evite molhar os cílios para garantir a
+                                    fixação adequada da cola. Após esse período, você pode molhar normalmente, mas evite
+                                    esfregar os olhos.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__header" onclick="toggleFAQ(this)">
+                                <h3 class="faq__question">O procedimento tem alguma contraindicação?</h3>
+                                <i class="fas fa-chevron-down faq__icon"></i>
+                            </div>
+                            <div class="faq__content">
+                                <p class="faq__answer">
+                                    Pessoas com alergias conhecidas a colas ou adesivos, conjuntivite ativa, ou que
+                                    estejam fazendo tratamentos oculares devem evitar o procedimento. Sempre informamos
+                                    sobre possíveis reações e fazemos um teste de sensibilidade quando necessário.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__header" onclick="toggleFAQ(this)">
+                                <h3 class="faq__question">Qual a diferença entre os tipos de alongamento?</h3>
+                                <i class="fas fa-chevron-down faq__icon"></i>
+                            </div>
+                            <div class="faq__content">
+                                <p class="faq__answer">
+                                    <strong>Fio a Fio:</strong> Mais natural, um fio sintético por cílio natural.<br>
+                                    <strong>Volume Russo:</strong> Múltiplos fios finos por cílio, resultado mais
+                                    volumoso.<br>
+                                    <strong>Híbrido:</strong> Combinação dos dois, equilibrando naturalidade e volume.<br>
+                                    <strong>Volume Brasileiro:</strong> 3 a 6 fios finos aplicados por cílio natural, volume natural e delicado.<br>
+                                    <strong>Volume Egípcio:</strong> 7 a 12 fios ultrafinos por cílio natural, volume mais cheio e dramático.<br>
+                                    <strong>Mega Volume Brasileiro:</strong> 6 a 10 fios finíssimos por cílio natural, resultado volumoso e elegante.<br>
+                                    <strong>Mega Volume Egípcio:</strong> 12 a 16 ou mais fios ultrafinos por cílio natural, volume muito denso e impactante.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__header" onclick="toggleFAQ(this)">
+                                <h3 class="faq__question">Como cuidar das sobrancelhas após o design?</h3>
+                                <i class="fas fa-chevron-down faq__icon"></i>
+                            </div>
+                            <div class="faq__content">
+                                <p class="faq__answer">
+                                    Evite molhar a região nas primeiras 4 horas, não use produtos oleosos na área e
+                                    evite exposição solar direta no primeiro dia. Para manter o formato, recomendamos
+                                    retoque a cada 3-4 semanas.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="faq__item">
+                            <div class="faq__header" onclick="toggleFAQ(this)">
+                                <h3 class="faq__question">Preciso trazer algum documento para o atendimento?</h3>
+                                <i class="fas fa-chevron-down faq__icon"></i>
+                            </div>
+                            <div class="faq__content">
+                                <p class="faq__answer">
+                                    Nao é necessário apresentar um documento para o
+                                    primeiro atendimento. <strong>Menores de 18 anos precisam estar acompanhados dos
+                                    responsáveis.</strong> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section class="contato section" id="contato">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        Fale com a Marta
+                        <i class="fas fa-hand-wave"></i>
+                    </h2>
+                    <p class="section__description">
+                        Tem dúvidas ou quer falar direto pelo WhatsApp? É só clicar abaixo.
+                    </p>
+                </div>
+
+                <div class="contato__container grid">
+                    <div class="contato__content">
+                        <div class="contato__buttons">
+                            <a href="https://wa.me/5566996566406"
+                                class="button contato__button contato__button--whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp direto
+                            </a>
+
+                            <a href="tel:+5566996566406" class="button contato__button contato__button--phone">
+                                <i class="fas fa-phone"></i>
+                                Chamar agora
+                            </a>
+
+                            <a href="https://www.instagram.com/studiomartacosta_?igsh=emJmZHl1MnZncTBk"
+                                class="button contato__button contato__button--instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                Instagram
+                            </a>
+
+                            <a href="https://www.google.com.br/maps/@-16.4564827,-54.6112287,321m/data=!3m1!1e3?hl=pt-BR"
+                                class="button contato__button contato__button--location" target="_blank">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Localização
+                            </a>
+                        </div>
+
+                        <div class="contato__info">
+                            <div class="info__item">
+                                <i class="fas fa-clock info__icon"></i>
+                                <div class="info__content">
+                                    <h4 class="info__title">Horário de atendimento</h4>
+                                    <p class="info__text">Seg. a Sáb. – 8h às 18h</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo">
+                    <span class="logo-text">MB</span>
+                    <span class="logo-name">Marta Beauty</span>
+                </div>
+                <p class="footer__text">
+                    Sua beleza em boas mãos. Especialista em cílios e sobrancelhas.
+                </p>
+                <div class="footer__social">
+                    <a href="https://wa.me/5566996566406" class="footer__social-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/studiomartacosta_?igsh=emJmZHl1MnZncTBk"
+                        class="footer__social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2024 Marta Beauty. Todos os direitos reservados.
+                </p>
+              
+                <!-- Desenvolvido por f3llipp victorio-->
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5566996566406?text=Olá,%20gostaria%20de%20agendar%20um%20horário%20para%20cílios%20ou%20sobrancelha!"
+        class="whatsapp-float" target="_blank" title="Falar no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
